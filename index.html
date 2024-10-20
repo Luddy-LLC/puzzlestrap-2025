@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,21 @@
     <link rel="stylesheet" href="puzzlestrap.css">
     <script src="puzzlestrap.js"></script>
 </head>
+
 <body>
 
-    <!-- Button trigger modal -->
+    <button class="btn btn-primary" style="background-position: var(--x), var(--y);">
+        Hello
+    </button>
+
+    <!-- Button trigger modal
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Launch demo modal
     </button>
-    
+    -->
+
     <!-- Modal -->
+    <!--
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
         <div class="modal-content">
@@ -31,7 +39,20 @@
             </div>
         </div>
         </div>
-    </div>
+    </div> -->
+
+
+    <script>
+        const btn = document.querySelector('.btn')
+        btn.onmousemove = function (e) {
+            let x = e.pageX - btn.offsetLeft
+            let y = e.pageY - btn.offsetTop
+            btn.style.setProperty('--x', x + 'px')
+            btn.style.setProperty('--y', y + 'px')
+        }
+        
+    </script>
 
 </body>
+
 </html>

@@ -1,0 +1,29 @@
+{
+  "name": "puzzlestrap-2025",
+  "version": "1.0.0",
+  "description": "Space-themed CSS and JS for Mega Puzzle 2025",
+  "main": "puzzlestrap.js",
+  "homepage": "http://luddy-llc.github.io/puzzlestrap-2025",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "deploy-storybook": "npm run build-storybook;gh-pages -d storybook-static"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.9.0",
+    "@storybook/addon-essentials": "^8.3.6",
+    "@storybook/addon-links": "^8.3.6",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.5",
+    "@storybook/blocks": "^8.3.6",
+    "@storybook/test": "^8.3.6",
+    "@storybook/web-components": "^8.3.6",
+    "@storybook/web-components-webpack5": "^8.3.6",
+    "gh-pages": "^6.2.0",
+    "lit": "^3.2.1",
+    "storybook": "^8.3.6"
+  }
+}
