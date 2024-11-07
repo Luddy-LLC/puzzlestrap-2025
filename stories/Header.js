@@ -43,3 +43,4 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => html`
     </div>
   </header>
 `;
+

@@ -7,5 +7,5 @@ export default create({
   fontBase: '"Inter", sans-serif',
   colorSecondary: '#990000',
   brandImage: '',
-  brandTarget: '_self',
+  brandTarget: '_self'
 });
