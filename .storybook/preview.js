@@ -1,4 +1,6 @@
 /** @type { import('@storybook/web-components').Preview } */
+import '../components.js';
+
 const preview = {
   parameters: {
     backgrounds: {

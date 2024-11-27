@@ -1,46 +1,25 @@
-import { fn } from '@storybook/test';
+import { html } from 'lit';
 
-import { Button } from './Button';
-
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 export default {
-  title: 'Example/Button',
-  tags: ['autodocs'],
-  render: (args) => Button(args),
-  argTypes: {
-    backgroundColor: { control: 'color' },
-    size: {
-      control: { type: 'select' },
-      options: ['small', 'medium', 'large'],
-    },
-  },
-  args: { onClick: fn() },
+  title: 'Mega Puzzle/Button',
+  component: 'Button',
+  id: 'btn',
+  args: { label: "I'm an anchor tag", href: "https://reeceneedham.com", primaryColour: false, openInNewTab: false}
 };
 
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary = {
-  args: {
-    primary: true,
-    label: 'Button',
-  },
+export const anchor = {
+  args: { label: "I'm an anchor tag", href: "https://reeceneedham.com", openInNewTab: false, primaryColour: false},
+  render: ({label, href, openInNewTab, primaryColour}) => {
+
+    return openInNewTab ? 
+    html`<a class="${primaryColour ? `primary`:``}" href="${href}" target="_blank" rel="noopener">${label}</a>`:
+    html`<a class="${primaryColour ? `primary`:``}" href="${href}">${label}</a>`;
+  }
 };
 
-export const Secondary = {
-  args: {
-    label: 'Button',
-  },
-};
-
-export const Large = {
-  args: {
-    size: 'large',
-    label: 'Button',
-  },
-};
-
-export const Small = {
-  args: {
-    size: 'small',
-    label: 'Button',
-  },
+export const button = {
+  args: { label: "I'm a button!", primaryColour: true},
+  render: ({label, primaryColour}) => {
+    return html`<button class="${primaryColour ? `primary`:``}">${label}</button>`
+  }
 };
