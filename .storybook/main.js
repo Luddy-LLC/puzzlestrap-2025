@@ -2,11 +2,11 @@
 
 const config = {
   stories: [
-    "../stories/**/Configure.mdx",
+    "../stories/**/Welcome.mdx",
     "../stories/**/*.mdx",
     "../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
   ],
-  staticDirs: [{ from: '../styles', to: '/styles' }],
+  staticDirs: [{ from: '../static', to: '/static' }],
   addons: [
     "@storybook/addon-webpack5-compiler-swc",
     "@storybook/addon-links",

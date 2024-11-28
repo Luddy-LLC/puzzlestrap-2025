@@ -1,43 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-puzzle="examplepuzzle">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="components.js"></script>
+    <meta name="theme-color" content="rgb(34, 36, 37)">
+    <title>Playground</title>
+    <script type="module" src="components.js"></script>
     <!-- <link rel="stylesheet" href="styles/bootstrap-form.css"> -->
     <link rel="stylesheet" href="static/puzzlestrap.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
 </head>
 
+<body class="preview">
 
-<body>
-    <div class="preview">
+        <button popovertarget="m">Open</button>
+        <mp-offcanvas oc-id="m" title="Hints" icon="mp-sparkle" footer="This is something I cooked up..."
+            full-height="">
+        </mp-offcanvas>
 
-    <button popovertarget="m">Open</button>
-    <div class="mp-offcanvas">
-        <div class="offcanvas-panel" role="dialog" popover id="m">
-            <div class="oc-header">
-                <svg width="40px" height="40px" aria-hidden="true"><use href="static/icons.svg#mp-terminal" xlink:href="static/icons.svg#mp-terminal"></use></svg>
-                <h1>shipArchive</h1>
-                <button popovertarget="m" class="plain" aria-label="Close Menu">
-                      <svg width="40px" height="40px" aria-hidden="true"><use href="static/icons.svg#mp-x" xlink:href="static/icons.svg#mp-x"></use></svg>
-                </button>
-            </div>
-            <div class="oc-body">
-                <p>Qui in labore deserunt ut cillum cillum dolore adipisicing non anim est tempor sint nostrud proident irure eu sint dolor tempor dolore reprehenderit est laboris 
-                    Qui in labore deserunt ut cillum cillum dolore adipisicing non anim est tempor sint nostrud proident irure eu sint dolor tempor dolore reprehenderit est laboris 
-                    Qui in labore deserunt ut cillum cillum dolore adipisicing non anim est tempor sint nostrud proident irure eu sint dolor tempor dolore reprehenderit est laboris </p>
-            </div>
-            <div class="oc-footer">
-                <p>Don't know what's itching my neural network, but maybe these are worth a try.</p>
-            </div>
-        </div>
-    </div>
+        <button popovertarget="hints-menu">Hints</button>
+        <mp-hints></mp-hints>
 
-    </div>
+        <button popovertarget="archive-menu">Archive</button>
+        <mp-archive></mp-archive>
+
+        <button popovertarget="solve-menu">Solve</button>
+        <mp-solve></mp-solve>
+
+        <!-- <mp-alert label="Yay!" type="success"></mp-alert>
+        <mp-alert label="Oh no" type="warning"></mp-alert>
+        <mp-alert label="Wrong." type="failure"></mp-alert>
+        <mp-alert label="Here's some info" type="info"></mp-alert> -->
+
 </body>
 
 </html>
