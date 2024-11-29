@@ -1,4 +1,5 @@
 import { checkAnswer, autoFill, clearAnswer, getPerson } from "./logic/check.js";
+import { togglePlay, isPlaying } from "./logic/audio.js";
 
 function camelise(str) {
     return str.replaceAll("-", "").replaceAll(" ", "").replaceAll("_", "").replace(/(?:^\w|[A-Z]|\b\w)/g, function (word, index) {
@@ -282,3 +283,69 @@ class Solve extends HTMLElement {
     attributeChangedCallback() { this.render(); }
 }
 customElements.define("mp-solve", Solve);
+
+// Music
+// id: music-menu
+class Music extends HTMLElement {
+    static observedAttributes = [];
+    constructor() { super(); }
+    attributeChangedCallback(name, oldValue, newValue) { render() }
+    render(songInfo, footerMessage) {
+        this.innerHTML = `
+        <div class="mp-offcanvas">
+            <div class="offcanvas-panel" role="dialog"
+                popover id="music-menu" aria-labelledby="hintstitle">
+                <div class="oc-header"><svg width="40px" height="40px" aria-hidden="true">
+                        <use href="static/icons.svg#mp-music"
+                            xlink:href="static/icons.svg#mp-music"></use>
+                    </svg>
+                    <h1 id="hintstitle">Music</h1><button
+                        popovertarget="hints-menu" class="plain" aria-label="Close Menu"><svg width="40px" height="40px"
+                            aria-hidden="true">
+                            <use href="static/icons.svg#mp-x" xlink:href="static/icons.svg#mp-x"></use>
+                        </svg></button>
+                </div>
+                <div class="oc-body music">
+                    <p class="song-small caps">Now Playing</p>
+                    <p class="song-large">Visions of Gideon</p>
+                    <p class="song-small">Sufjan Stevens</p>
+                    <button class="plain">
+                        <svg width="40px" height="40px" aria-label="Play">
+                            <use href="static/icons.svg#mp-play"
+                                xlink:href="static/icons.svg#mp-play"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="oc-footer">
+                    <p>${footerMessage ?? ""}</p>
+                </div>
+            </div>
+        </div>
+
+        <audio id="audio-player" controls src="${songInfo.file}" loop hidden></audio>
+        `;
+    }
+    connectedCallback() {
+        var h = "";
+        fetch('puzzles.json')
+        .then(response => response.json())
+        .then((data) => {
+            const song = data[document.getElementsByTagName('html')[0].getAttribute('data-puzzle')].music ?? "none";
+            fetch('logic/shipdialogue.json')
+                .then(response => response.json())
+                .then((data) => {
+                    const footerMessage = data.music[~~(Math.random() * data.music.length)];
+                    this.render(song, footerMessage);
+                }).catch(error => console.log(error));
+        }).catch(error => console.log(error));
+        var meta = document.querySelector("meta[name='theme-color']");
+        try {
+            const metaColour = meta.content;
+            document.querySelectorAll(".offcanvas-panel")[0].addEventListener("toggle", (e) => {
+                e.newState === "open" ? meta.content = "rgb(15,15,15)" : meta.content = metaColour
+            })    
+        } catch {}
+    }
+    attributeChangedCallback() { this.render(); }
+}
+customElements.define("mp-music", Music);

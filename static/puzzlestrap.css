@@ -170,7 +170,36 @@ form{display:flex;flex-direction:column;gap:10px;&.start{align-items:flex-start}
   }
 
   .oc-body {
-    flex: auto
+    flex: auto;
+
+    &.music {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      padding: 25px 0;
+      gap: 10px;
+
+      .song-large {
+        margin: 0;
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+
+      .song-small {
+        margin: 0;
+      } 
+
+      .caps {
+        text-transform: uppercase;
+        /* font-weight: bold; */
+      }
+
+      button {
+        
+      }
+
+    }
   }
 
   .oc-footer {}
