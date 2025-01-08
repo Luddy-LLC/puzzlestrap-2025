@@ -4,7 +4,7 @@ export default {
   title: 'Mega Puzzle/Navigation Bar',
   component: 'Nav',
   id: 'nav',
-  render: ({ label, solveable }) => html`<mp-nav title="${label}" is-solveable="${solveable}"></mp-nav>` 
+  render: ({ label, solveable }) => html`<mp-nav label="${label}" is-solveable="${solveable}"></mp-nav>` 
 };
 
 export const solveable = {
@@ -14,3 +14,8 @@ export const solveable = {
 export const notSolveable = {
   args: { label: 'Not Solveable :(', solveable: false }
 };
+
+export const justBackButton = {
+  args: {label: 'Oh, hi!'},
+  render: ({ label }) => html`<mp-back label="${label}"></mp-back>`
+}
