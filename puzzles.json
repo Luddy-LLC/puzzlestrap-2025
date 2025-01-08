@@ -1,15 +1,22 @@
 {
     "examplepuzzle": {
         "title": "No Title Here",
-        "archive": "Hrm, seems our archives are lacking in this area.",
+        "type" : "standard-puzzle",
+        "metadata" : {
+            "theme-color" : "rgb(34, 36, 37)",
+            "description" : "This puzzle is a super epic.....",
+            "screenshot" : "file name of puzzle screenshot",
+            "screenshot-alt" : "screenshot alt text"
+        },
         "hints": [
             "There's no hints to display...",
             "Check back soon!"
         ],
         "music": {
-            "song": "Visions of Gideon",
-            "artist": "Sufjan Stevens",
-            "file": ""
-        }
+            "song": "Visionsss of Gideon",
+            "artist": "Sufjan Stevenssss",
+            "file": "music.mp3"
+        },
+        "archive": "Hrm, seems our archives are lacking in this area."
     }
 }

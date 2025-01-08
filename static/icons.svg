@@ -24,8 +24,14 @@
         <symbol id="mp-play" viewBox="0 0 24 24" style="fill: currentColor">
             <path d="M7 6v12l10-6z"></path>
         </symbol>
+        <symbol id="mp-play-circle" viewBox="0 0 24 24" style="fill: currentColor">
+        <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path>
+        </symbol>
         <symbol id="mp-pause" viewBox="0 0 24 24" style="fill: currentColor">
             <path d="M8 7h3v10H8zm5 0h3v10h-3z"></path>
+        </symbol>
+        <symbol id="mp-pause-circle" viewBox="0 0 24 24" style="fill: currentColor">
+            <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 9h2v6h-2zM9 9h2v6H9z"></path>
         </symbol>
         <symbol id="mp-warning" viewBox="0 0 24 24" style="fill: currentColor">
             <path d="M11.001 10h2v5h-2zM11 16h2v2h-2z"></path>
@@ -155,7 +161,25 @@
                 d="M.682 3.349h6.822c.377 0 .682.305.682.682v6.822a.68.68 0 0 1-.682.682H.682A.68.68 0 0 1 0 10.853V4.03c0-.377.305-.682.682-.682Zm5.206 2.596v-.72h-3.59v.72h1.357V9.66h.87V5.945z" />
         </symbol>
         <symbol id="mp-eq" viewBox="0 0 24 24" style="fill: currentColor">
-            <path d="M11 9h2v6h-2zm4-3h2v12h-2zM7 4h2v16H7zm12 7h2v2h-2zM3 10h2v4H3z"></path>
+            <style type="text/css">
+                .eq-bar {transform: scale(1, -1) translate(0, -24px);}
+            </style>
+            <rect class="eq-bar" x="4" y="4" width="3.7" height="8"/>
+            <rect class="eq-bar" x="10.2" y="4" width="3.7" height="8"/>
+            <rect class="eq-bar" x="16.3" y="4" width="3.7" height="8"/>
+        </symbol>
+        <symbol id="mp-eq-animated" viewBox="0 0 24 24" style="fill: currentColor">
+            <style type="text/css">
+                .eq-bar {transform: scale(1, -1) translate(0, -24px);}
+                .eq-1 {animation: short-eq 1.2s infinite 0s;}
+                .eq-2 {animation: tall-eq 1.8s infinite 0.6s;}
+                .eq-3 {animation: short-eq 0.9s infinite 0.3s;}
+                @keyframes short-eq{0%{height:8px}25%{height:4px}50%{height:12px}75%{height:4px}100%{height:8px}}
+                @keyframes tall-eq{0%{height:8px}25%{height:16px}50%{height:6px}75%{height:16px}100%{height:8px}}
+            </style>
+            <rect class="eq-bar eq-1" x="4" y="4" width="3.7" height="8"/>
+            <rect class="eq-bar eq-2" x="10.2" y="4" width="3.7" height="8"/>
+            <rect class="eq-bar eq-3" x="16.3" y="4" width="3.7" height="8"/>
         </symbol>
         <symbol id="mp-book" viewBox="0 0 24 24" style="fill: currentColor">
             <path
