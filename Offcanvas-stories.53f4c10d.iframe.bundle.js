@@ -1,0 +1,14 @@
+"use strict";(self.webpackChunkpuzzlestrap_2025=self.webpackChunkpuzzlestrap_2025||[]).push([[362],{"./stories/Offcanvas.stories.js":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.r(__webpack_exports__),__webpack_require__.d(__webpack_exports__,{__namedExportsOrder:()=>__namedExportsOrder,archive:()=>archive,default:()=>__WEBPACK_DEFAULT_EXPORT__,hints:()=>hints,music:()=>music,solve:()=>solve});var lit__WEBPACK_IMPORTED_MODULE_0__=__webpack_require__("./node_modules/lit/index.js");const __WEBPACK_DEFAULT_EXPORT__={title:"Mega Puzzle/Offcanvas",component:"Offcanvas",id:"oc",args:{offcanvas_id:"m",title:"Example modal",icon:"mp-sparkle",footer:"This is a footer"},argTypes:{offcanvas_id:{control:{type:"text"}},title:{control:{type:"text"}},icon:{control:{type:"text"}},footer:{control:{type:"text"}}},render:({offcanvas_id,title,icon,footer})=>lit__WEBPACK_IMPORTED_MODULE_0__.qy`
+    <button popovertarget="${offcanvas_id}">Open Custom Offcanvas</button>
+      <mp-offcanvas oc-id="${offcanvas_id}" title="${title}" icon="${icon}" footer="${footer}"
+        full-height="">
+      </mp-offcanvas>`},hints={render:()=>lit__WEBPACK_IMPORTED_MODULE_0__.qy`
+  <button popovertarget="hints-menu">Hints</button>
+  <mp-hints></mp-hints>`},archive={render:()=>lit__WEBPACK_IMPORTED_MODULE_0__.qy`
+  <button popovertarget="archive-menu">Archive</button>
+  <mp-archive></mp-archive>`},solve={render:()=>lit__WEBPACK_IMPORTED_MODULE_0__.qy`
+  <button popovertarget="solve-menu">Solve</button>
+  <mp-solve></mp-solve>`},music={render:()=>lit__WEBPACK_IMPORTED_MODULE_0__.qy`
+  <button popovertarget="music-menu">Music</button>
+  <mp-music></mp-music>`},__namedExportsOrder=["hints","archive","solve","music"];hints.parameters={...hints.parameters,docs:{...hints.parameters?.docs,source:{originalSource:'{\n  render: () => {\n    return html`\n  <button popovertarget="hints-menu">Hints</button>\n  <mp-hints></mp-hints>`;\n  }\n}',...hints.parameters?.docs?.source}}},archive.parameters={...archive.parameters,docs:{...archive.parameters?.docs,source:{originalSource:'{\n  render: () => {\n    return html`\n  <button popovertarget="archive-menu">Archive</button>\n  <mp-archive></mp-archive>`;\n  }\n}',...archive.parameters?.docs?.source}}},solve.parameters={...solve.parameters,docs:{...solve.parameters?.docs,source:{originalSource:'{\n  render: () => {\n    return html`\n  <button popovertarget="solve-menu">Solve</button>\n  <mp-solve></mp-solve>`;\n  }\n}',...solve.parameters?.docs?.source}}},music.parameters={...music.parameters,docs:{...music.parameters?.docs,source:{originalSource:'{\n  render: () => {\n    return html`\n  <button popovertarget="music-menu">Music</button>\n  <mp-music></mp-music>`;\n  }\n}',...music.parameters?.docs?.source}}}}}]);
+//# sourceMappingURL=Offcanvas-stories.53f4c10d.iframe.bundle.js.map

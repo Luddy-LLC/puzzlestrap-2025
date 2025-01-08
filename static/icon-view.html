@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body {
+            color-scheme: dark;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            font-family: sans-serif;
+        }
+        .icon-group {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: start;
+            align-items: center;
+            gap: 10px;
+            background-color: rgb(35, 35, 35);
+            border-radius: .8em;
+            padding: 10px;
+            margin: 5px 0px;
+            width: 200px;
+        }
+        svg, p, h1, pre {
+            color: white;
+        }
+
+        svg {
+            border: rgb(72, 71, 71) 1px solid;
+        }
+
+        pre {
+            border-bottom: 1px solid white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Icon Library</h1>
+
+    <p>To use these icons, simply use the <code>&#x3C;svg&#x3E;</code> tag and <code>&#x3C;use&#x3E;</code> like this:</p>
+    <pre>
+        &#x3C;svg width=&#x22;40px&#x22; height=&#x22;40px&#x22; aria-hidden=&#x22;true&#x22;&#x3E;
+            &#x3C;use href=&#x22;icons.svg#mp-person&#x22; xlink:href=&#x22;icons.svg#mp-person&#x22;&#x3E;&#x3C;/use&#x3E;
+        &#x3C;/svg&#x3E;
+    </pre>
+
+    
+    <div class="icon-group">
+        <p id="mp-person">mp-person</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-person" xlink:href="icons.svg#mp-person"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-credits">mp-credits</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-credits" xlink:href="icons.svg#mp-credits"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-trophy">mp-trophy</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-trophy" xlink:href="icons.svg#mp-trophy"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-chart">mp-chart</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-chart" xlink:href="icons.svg#mp-chart"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-play">mp-play</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-play" xlink:href="icons.svg#mp-play"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-pause">mp-pause</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-pause" xlink:href="icons.svg#mp-pause"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-warning">mp-warning</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-warning" xlink:href="icons.svg#mp-warning"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-video">mp-video</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-video" xlink:href="icons.svg#mp-video"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-info">mp-info</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-info" xlink:href="icons.svg#mp-info"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-info-filled">mp-info-filled</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-info-filled" xlink:href="icons.svg#mp-info-filled"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-star">mp-star</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-star" xlink:href="icons.svg#mp-star"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-star-filled">mp-star-filled</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-star-filled" xlink:href="icons.svg#mp-star-filled"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-star-half">mp-star-half</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-star-half" xlink:href="icons.svg#mp-star-half"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-arrow-right">mp-arrow-right</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-arrow-right" xlink:href="icons.svg#mp-arrow-right"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-arrow-left">mp-arrow-left</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-arrow-left" xlink:href="icons.svg#mp-arrow-left"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-arrow-up">mp-arrow-up</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-arrow-up" xlink:href="icons.svg#mp-arrow-up"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-arrow-down">mp-arrow-down</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-arrow-down" xlink:href="icons.svg#mp-arrow-down"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-check">mp-check</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-check" xlink:href="icons.svg#mp-check"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-check-circle">mp-check-circle</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-check-circle" xlink:href="icons.svg#mp-check-circle"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-x">mp-x</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-x" xlink:href="icons.svg#mp-x"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-x-circle">mp-x-circle</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-x-circle" xlink:href="icons.svg#mp-x-circle"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-github">mp-github</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-github" xlink:href="icons.svg#mp-github"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-email">mp-email</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-email" xlink:href="icons.svg#mp-email"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-rocket">mp-rocket</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-rocket" xlink:href="icons.svg#mp-rocket"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-planet">mp-planet</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-planet" xlink:href="icons.svg#mp-planet"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-accessibility">mp-accessibility</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-accessibility" xlink:href="icons.svg#mp-accessibility"></use>
+        </svg>
+    </div>
+    <circle cx="12" cy="7.5" r="1.5"></circle>
+    <div class="icon-group">
+        <p id="mp-music">mp-music</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-music" xlink:href="icons.svg#mp-music"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-sparkle">mp-sparkle</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-sparkle" xlink:href="icons.svg#mp-sparkle"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-terminal">mp-terminal</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-terminal" xlink:href="icons.svg#mp-terminal"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-globe">mp-globe</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-globe" xlink:href="icons.svg#mp-globe"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-linkedin">mp-linkedin</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-linkedin" xlink:href="icons.svg#mp-linkedin"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-teams">mp-teams</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-teams" xlink:href="icons.svg#mp-teams"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-eq">mp-eq</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-eq" xlink:href="icons.svg#mp-eq"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-book">mp-book</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-book" xlink:href="icons.svg#mp-book"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-metal">mp-metal</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-metal" xlink:href="icons.svg#mp-metal"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-shirt">mp-shirt</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-shirt" xlink:href="icons.svg#mp-shirt"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-bag">mp-bag</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-bag" xlink:href="icons.svg#mp-bag"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-person-plus">mp-person-plus</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-person-plus" xlink:href="icons.svg#mp-person-plus"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-insta">mp-insta</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-insta" xlink:href="icons.svg#mp-insta"></use>
+        </svg>
+    </div>
+    <circle cx="11.994" cy="11.979" r="3.003"></circle>
+    <div class="icon-group">
+        <p id="mp-fb">mp-fb</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-fb" xlink:href="icons.svg#mp-fb"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-reddit">mp-reddit</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-reddit" xlink:href="icons.svg#mp-reddit"></use>
+        </svg>
+    </div>
+    <circle cx="9.67" cy="13" r="1.001"></circle>
+    <div class="icon-group">
+        <p id="mp-figma">mp-figma</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-figma" xlink:href="icons.svg#mp-figma"></use>
+        </svg>
+    </div>
+    <circle cx="15.332" cy="12" r="3.332"></circle>
+    <div class="icon-group">
+        <p id="mp-bootstrap">mp-bootstrap</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-bootstrap" xlink:href="icons.svg#mp-bootstrap"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-pinterest">mp-pinterest</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-pinterest" xlink:href="icons.svg#mp-pinterest"></use>
+        </svg>
+    </div>
+    <div class="icon-group">
+        <p id="mp-discord">mp-discord</p>
+        <svg width="40px" height="40px" aria-hidden="true">
+            <use href="icons.svg#mp-discord" xlink:href="icons.svg#mp-discord"></use>
+        </svg>
+    </div>
+</body>
+
+</html>
